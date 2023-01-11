@@ -31,3 +31,14 @@ MQ135 gasSensor = MQ135(sensorPin, 54.51, 22);
 
 // Setting up bmp (Pressure sensor)
 Adafruit_BMP085 bmp;
+
+// Startup/setup (Code runs only once) 
+// Initialize and configure things needed later
+void setup () {
+  
+}
+
+// Code that will be repeatet after controller startup
+void loop () {
+
+}
