@@ -39,10 +39,14 @@ Adafruit_BMP085 bmp;
 // Startup/setup (Code runs only once) 
 // Initialize and configure things needed later
 void setup () {
+  // Setting up serial
+  Serial.begin(115200);
   // Setting up sensors, wifi and servos
 }
 
 // Code that will be repeatet after controller startup
 void loop () {
   // Serve website and send Data, controll motors and servos
+  // Sending data via serial port
+  Serial.println("Temperature: " + (String)dht.readTemperature() + "C Humidity: " + (String)dht.readHumidity() + "% CO2: " + (String)gasSensor.getPPM() + "ppm Pressure: " + (String)bmp.readPressure() + " Pa Altitude: " + (String)bmp.readAltitude() + "m");
 }
