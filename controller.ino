@@ -32,13 +32,17 @@ MQ135 gasSensor = MQ135(sensorPin, 54.51, 22);
 // Setting up bmp (Pressure sensor)
 Adafruit_BMP085 bmp;
 
+// Setting up wifi data
+#define WIFI_SSID "Airship"
+#define WIFI_PASSWORD "SuperSecretPassword"
+
 // Startup/setup (Code runs only once) 
 // Initialize and configure things needed later
 void setup () {
-  
+  // Setting up sensors, wifi and servos
 }
 
 // Code that will be repeatet after controller startup
 void loop () {
-
+  // Serve website and send Data, controll motors and servos
 }
